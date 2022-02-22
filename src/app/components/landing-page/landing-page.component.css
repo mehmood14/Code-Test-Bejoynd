@@ -1,0 +1,25 @@
+.mainContainer {
+  background: lightblue url("../../../assets/landing-page.jpg") no-repeat fixed
+    center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fetchPoem {
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+
+:hover.fetchPoem {
+  background-color: #883d3d;
+  color: black;
+}

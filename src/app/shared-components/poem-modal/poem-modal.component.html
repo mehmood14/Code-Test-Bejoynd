@@ -1,0 +1,14 @@
+<div mat-dialog-content class="d-flex flex-column text-center">
+  <h2>
+    {{ data.poem.title }} <br />
+    By <br />
+    {{ data.poem.author }}
+  </h2>
+
+  <p *ngFor="let lines of data.poem.lines">
+    {{ lines }}
+  </p>
+</div>
+<div mat-dialog-actions style="float: right">
+  <button mat-raised-button mat-dialog-close>Close</button>
+</div>

@@ -1,0 +1,4 @@
+.mainContainer {
+  background: lightblue url("../assets/landing-page.jpg") no-repeat fixed center;
+  overflow: hidden;
+}

@@ -1,0 +1,34 @@
+<mat-toolbar class="back">
+  <div class="col-sm-6">
+    <div class="row">
+      <div
+        class="col-sm-12 d-flex align-items-center"
+        style="font-size: 23px; font-style: italic"
+      >
+        <span class="mr-1"> Code-Test </span>
+        <span style="color: #883d3d"> Bejoynd</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 d-flex align-items-center justify-content-end">
+    <mat-icon (click)="homeComp()">arrow_back</mat-icon>
+  </div>
+</mat-toolbar>
+
+<div class="row justify-content-center mt-3">
+  <mat-card
+    class="example-card m-3 flex-column poemCard back"
+    *ngFor="let poem of favPoems"
+  >
+    <mat-card-title class="d-flex align-items-end"
+      ><mat-icon class="mt-3">toc</mat-icon> <span> {{ poem.title }}</span>
+    </mat-card-title>
+    <mat-card-subtitle class="d-flex align-items-end"
+      ><mat-icon class="mt-3">person</mat-icon> <span>{{ poem.author }}</span>
+    </mat-card-subtitle>
+    <mat-icon title="remove from favourite" (click)="remove(poem)"
+      >delete</mat-icon
+    >
+  </mat-card>
+</div>
